@@ -10,7 +10,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		IFabricaSistemaOperacional fabrica = new FabricaWindows();
-		ICore core = new Gibabyte();
+		ICore core = Gibabyte.getInstance();
 		
 		core.boot(fabrica);
 	}
